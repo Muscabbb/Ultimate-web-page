@@ -328,6 +328,12 @@ header .container .mega-menu ul li a{
     margin-top: 100px;
 }
 
+@media (max-width: 991px){
+    .Landing .container .text h2{
+        margin-top: 40px;
+    }
+}
+
 .Landing .container .text p{
     line-height: 1.5;
     color: var(--main-text);
