@@ -7,7 +7,7 @@
     --gold:#FFC107;
     --green-btn:#009688;
     --red-btn:#f44036;
-    --padding:20px;
+    --padding:50px;
 }
 /* End Global Variables */
 
@@ -214,7 +214,7 @@ header .container nav ul{
 header .container nav ul li a{
     text-transform: capitalize;
     font-size: 1.1em;
-    padding: 25px 20px;
+    padding: 33px 20px;
     position: relative;
     transition: .5s;
     display: block;
@@ -249,11 +249,6 @@ header .container nav ul li a:hover{
     transition: .5s;
 }
 
-
-
-/* header .container nav ul li a:not(.other-links){
-    margin-right: 30px;
-} */
 
 header .container nav ul li a::before{
     content: "";
@@ -315,7 +310,7 @@ header .container .mega-menu ul{
     flex-basis: 45%;
     display: grid;
     grid-template-columns: repeat(2,minmax(150px,1fr));
-    gap: 40px;
+    column-gap: 15px;
 }
 
 @media (max-width: 767px){
@@ -332,9 +327,8 @@ header .container .mega-menu ul{
 
 header .container .mega-menu ul li{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
-    font-size: 1.2em;
     text-transform: capitalize;
     color: var(--main-color);
     font-weight: 700;
@@ -357,12 +351,9 @@ header .container .mega-menu ul li:hover::before{
     width: 100%;
 }
 
-header .container .mega-menu ul li i{
-    font-size: 1.3em;
-}
-
 header .container .mega-menu ul li a{
     color: var(--main-color);
+    position: relative;
 }
 
 /* End Header */
@@ -897,3 +888,124 @@ header .container .mega-menu ul li a{
 }
 
 /* End Testemonials */
+
+/* Start Team members */
+.team-members{
+    padding: var(--padding) 0;
+}
+
+.team-members .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+    row-gap: 50px;
+    cursor: pointer;
+}
+
+@media (max-width:767px){
+    .team-members .container{
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        row-gap: 30px;
+    }
+}
+
+.team-members .container .game-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px 0;
+}
+
+.team-members .container .game-card::before,
+.team-members .container .game-card::after{
+    content: "";
+    position: absolute;
+    background: var(--main-text);
+    opacity: 0.1;
+    height: 100%;
+    width: 0%;
+    right: 0;
+    top: 0;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.team-members .container .game-card::before{
+    width: 90%;
+}
+
+
+.team-members .container .game-card:hover::after{
+    width: 90%;
+    opacity: 0.15;
+}
+
+.team-members .container .game-card .card-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.team-members .container .game-card .card-header .img{
+    flex-basis: 80%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.team-members .container .game-card .card-header .img img{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.team-members .container .game-card:hover .img img{
+    filter: grayscale();
+}
+
+.team-members .container .game-card .card-header .game-social-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.team-members .container .game-card .card-header .game-social-links i{
+    color: var(--main-text);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.team-members .container .game-card .card-header .game-social-links i:hover{
+    color: var(--main-color);
+}
+
+
+.team-members .container .game-card .game-info{
+    padding: 20px 0 20px 15%;
+    position: relative;
+    z-index: 2;
+}
+
+
+.team-members .container .game-card .game-info .game-name{
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 1.6em;
+    transition: .5s;
+}
+
+.team-members .container .game-card:hover .game-name{
+    color: var(--main-text);
+}
+
+.team-members .container .game-card .game-info .game-discrebtion{
+    line-height: 1.4;
+    color: var(--main-text);
+    margin-top: 10px;
+}
+
+/* End Team members */
