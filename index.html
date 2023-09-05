@@ -14,6 +14,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700&family=Josefin+Sans:wght@300&family=Julee&family=Montserrat:wght@500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@200;300;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .events .container::before,
+        .plans .container::before{
+            content: url(img/dots.png);
+            width: 100px;
+            position: absolute;
+            top: 0;
+            right: 40px;
+        }
+
+        .events .container::after,
+        .plans .container::after{
+            content: url(img/dots.png);
+            position: absolute;
+            bottom: 0;
+            left: -50px;
+        }
+
+        @media (max-width:991px){
+            .events .container::before,
+            .events .container::after,
+            .plans .container::before,
+            .plans .container::after{
+                content: "";
+            }
+        }
+
+    </style>
+
 </head>
 <body>
     <!-- Start Header  -->
@@ -40,28 +70,33 @@
                         <a href="#team-members">team members</a>
                     </li>
                     <li>
-                        <i class="fa-regular fa-circle-play"></i>
-                        <a href="#">top video</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-chart-pie"></i>
-                        <a href="#">stats</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-clipboard-list"></i>
-                        <a href="#">how it Works</a>
+                        <i class="fa-regular fa-building"></i>
+                        <a href="#services">services</a>
                     </li>
                     <li>
                         <i class="fa-regular fa-circle-check"></i>
-                        <a href="#">our skills</a>
+                        <a href="#skills">our skills</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <a href="#how-it-work">how it Works</a>
                     </li>
                     <li>
                         <i class="fa-regular fa-calendar-check"></i>
-                        <a href="#">events</a>
+                        <a href="#events">events</a>
                     </li>
                     <li>
-                        <i class="fa-regular fa-building"></i>
-                        <a href="#">services</a>
+                        <i class="fa-solid fa-bars-progress"></i>
+                        <a href="#plans">plans</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-circle-play"></i>
+                        <a href="#">top video</a>
+                    </li>
+                    
+                    <li>
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <a href="#">stats</a>
                     </li>
                 </ul>
             </div>
@@ -477,6 +512,288 @@
         </div>
     </div>
     <!-- Emd Team members -->
+    <div class="strike"></div>
+    <!-- Start Services -->
+    <div class="services" id="services">
+        <div class="main-component">
+            <h1 class="title">services</h1>
+        </div>
+        <div class="container">
+            <div class="service-box">
+                <i class="fa-solid fa-user-shield"></i>
+                <h2>security</h2>
+                <div class="details">
+                    <span>01</span>
+                    <p>details</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h2>fixing issues</h2>
+                <div class="details">
+                    <span>02</span>
+                    <p>details</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <h2>location</h2>
+                <div class="details">
+                    <span>03</span>
+                    <p>details</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-code"></i>
+                <h2>coding</h2>
+                <div class="details">
+                    <span>04</span>
+                    <p>details</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-palette"></i>
+                <h2>design</h2>
+                <div class="details">
+                    <span>05</span>
+                    <p>details</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h2>marketing</h2>
+                <div class="details">
+                    <span>06</span>
+                    <p>details</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Services -->
+    <!-- Start skills -->
+    <div class="skills" id="skills">
+        <div class="main-component">
+            <h1 class="title">services</h1>
+        </div>
+        <div class="container">
+            <div class="img">
+                <img src="img/skills.png" alt="">
+            </div>
+            <div class="skills-holder">
+                <div class="skill-progress">
+                    <h2 class="skill-name">html</h2>
+                    <div class="skill-bar" data-bar="75%">
+                        <span style="width: 75%;"></span>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <h2 class="skill-name">css</h2>
+                    <div class="skill-bar" data-bar="85%">
+                        <span style="width: 85%;"></span>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <h2 class="skill-name">js</h2>
+                    <div class="skill-bar" data-bar="55%">
+                        <span style="width: 55%;"></span>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <h2 class="skill-name">bootsrap</h2>
+                    <div class="skill-bar" data-bar="65%">
+                        <span style="width: 65%;"></span>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <h2 class="skill-name">scss</h2>
+                    <div class="skill-bar" data-bar="5%">
+                        <span style="width: 5%;"></span>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <h2 class="skill-name">react</h2>
+                    <div class="skill-bar" data-bar="15%">
+                        <span style="width: 15%;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End skills -->
+    <!-- Start How it Work -->
+    <div class="how-it-work" id="how-it-work">
+        <div class="main-component">
+            <h1 class="title">how it work</h1>
+        </div>
+        <div class="container">
+            <div class="img">
+                <img src="img/work-steps.png" alt="">
+            </div>
+            <div class="works">
+                <div class="work">
+                    <img src="img/work-steps-1.png" alt="">
+                    <div class="text">
+                        <h3>business analysis</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quibusdam sit atque exercitationem.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-steps-2.png" alt="">
+                    <div class="text">
+                        <h3>architecture</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quibusdam sit atque exercitationem.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-steps-3.png" alt="">
+                    <div class="text">
+                        <h3>development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quibusdam sit atque exercitationem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End How it Work -->
+    <!-- Start Events -->
+    <div class="events" id="events">
+        <div class="main-component">
+            <h1 class="title">latest events</h1>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="img">
+                    <img src="img/events.png" alt="">
+                </div>
+                <div class="text">
+                    <div class="timer">
+                        <div class="days">
+                            <span class="number-of-period">252</span>
+                            <h3>days</h3>
+                        </div>
+                        <div class="hours">
+                            <span class="number-of-period">5</span>
+                            <h3>hours</h3>
+                        </div>
+                        <div class="minutes">
+                            <span class="number-of-period">50</span>
+                            <h3>minutes</h3>
+                        </div>
+                        <div class="seconds">
+                            <span class="number-of-period">20</span>
+                            <h3>second</h3>
+                        </div>
+                    </div>
+                    <h2 class="event-title">tech master events 2023</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex quidem, modi repellendus distinctio exercitationem iure libero illum! Perspiciatis at illo culpa eum. Voluptatibus tempore obcaecati eum voluptas porro praesentium?</p>
+                </div>
+            </div>
+            <form action="#">
+                <input type="email" placeholder="enter your email">
+                <input type="submit" value="subscribe">
+            </form>
+        </div>
+    </div>
+    <!-- End Events -->
+    <div class="strike"></div>
+    <!-- Start Plans -->
+    <div class="plans" id="plans">
+        <div class="main-component">
+            <h1 class="title">pricing plans</h1>
+        </div>
+        <div class="container">
+            <div class="basic">
+                <h3 class="title">basic</h3>
+                <img src="img/hosting-basic.png" alt="">
+                <p class="price">$ 25</p>
+                <span>per month</span>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <p>10GB</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <p>5 email address</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <p>4 subdomains</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <p>3 database</p>
+                    </li>   
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <p>basic support</p>
+                    </li>
+                </ul>
+                <a href="#">choose plan</a>
+            </div>
+            <div class="advanced">
+                <span>most popular</span>
+                <h3 class="title">advanced</h3>
+                <img src="img/hosting-advanced.png" alt="">
+                <p class="price">$ 75</p>
+                <span>per month</span>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <p>100GB</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <p>15 email address</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <p>14 subdomains</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <p>9 database</p>
+                    </li>   
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <p>advanced support</p>
+                    </li>
+                </ul>
+                <a href="#">choose plan</a>
+            </div>
+            <div class="profitional">
+                <h3 class="title">profitional</h3>
+                <img src="img/hosting-professional.png" alt="">
+                <p class="price">$ 225</p>
+                <span>per month</span>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <p>400GB</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <p>50 email address</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <p>40 subdomains</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <p>30 database</p>
+                    </li>   
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <p>profitional support</p>
+                    </li>
+                </ul>
+                <a href="#">choose plan</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Plans -->
+
 
     <!-- JS File -->
     <script src="app.js"></script>
