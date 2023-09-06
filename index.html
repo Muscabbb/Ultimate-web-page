@@ -42,6 +42,27 @@
             }
         }
 
+        .stats{
+            padding: var(--padding) 0;
+            background: url(img/stats.jpg),no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .we-have-discount{
+            flex-basis: 50%;
+            background: url(img/discount-background1.jpg),no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 100px 50px;
+        }
+
     </style>
 
 </head>
@@ -91,12 +112,15 @@
                     </li>
                     <li>
                         <i class="fa-regular fa-circle-play"></i>
-                        <a href="#">top video</a>
+                        <a href="#video">top video</a>
                     </li>
-                    
                     <li>
                         <i class="fa-solid fa-chart-pie"></i>
-                        <a href="#">stats</a>
+                        <a href="#stats">stats</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-percent"></i>
+                        <a href="#discounts">discounts</a>
                     </li>
                 </ul>
             </div>
@@ -794,7 +818,7 @@
     </div>
     <!-- End Plans -->
     <!-- Start Video -->
-    <div class="video">
+    <div class="video" id="video">
         <div class="main-component">
             <h1 class="title">top videos</h1>
         </div>
@@ -848,6 +872,122 @@
         </div>
     </div>
     <!-- End Video -->
+    <!-- Start stats -->
+    <div class="stats" id="stats">
+        <h1 class="title">our owsome stats</h1>
+        <div class="container">
+            <div class="stats-box">
+                <i class="fa-solid fa-user-ninja"></i>
+                <span>155</span>
+                <p>clients</p>
+            </div>
+            <div class="stats-box">
+                <i class="fa-solid fa-code"></i>
+                <span>195</span>
+                <p>projects</p>
+            </div>
+            <div class="stats-box">
+                <i class="fa-solid fa-earth-africa"></i>
+                <span>15</span>
+                <p>countries</p>
+            </div>
+            <div class="stats-box">
+                <i class="fa-regular fa-money-bill-1"></i>
+                <span>$15,000</span>
+                <p>money</p>
+            </div>
+        </div>
+    </div>
+    <!-- End stats -->
+    <!-- Start Discount -->
+    <div class="discount" id="discounts">
+        <div class="we-have-discount">
+            <h3>we have a dicount</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, earum architecto minus laborum soluta quisquam maiores hic ea vitae impedit veritatis culpa dolorum exercitationem velit repellat facere atque animi corporis!</p>
+            <img src="img/discount.png" alt="">
+        </div>
+        <div class="discount-requast">
+            <h3>requast a dicount</h3>
+            <form action="#">
+                <input type="text" placeholder="your name">
+                <input type="email" placeholder="your email">
+                <input type="tek" placeholder="your phone">
+                <textarea placeholder="tell us your needs"></textarea>
+                <button>send</button>
+            </form>
+        </div>
+    </div>
+    <!-- End Discount -->
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="about-me">
+                <h2 class="logo">phanich</h2>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores dolorum veniam quaerat commodi. Neque cum eum mollitia hic alias.</p>
+            </div>
+            <div class="important-links">
+                <div class="li">
+                    <i class="fa-solid fa-angles-right"></i>
+                    <a href="#">important link</a>
+                </div>
+                <div class="li">
+                    <i class="fa-solid fa-angles-right"></i>
+                    <a href="#">important link</a>
+                </div>
+                <div class="li">
+                    <i class="fa-solid fa-angles-right"></i>
+                    <a href="#">important link</a>
+                </div>
+                <div class="li">
+                    <i class="fa-solid fa-angles-right"></i>
+                    <a href="#">important link</a>
+                </div>
+                <div class="li">
+                    <i class="fa-solid fa-angles-right"></i>
+                    <a href="#">important link</a>
+                </div>
+                <div class="li">
+                    <i class="fa-solid fa-angles-right"></i>
+                    <a href="#">important link</a>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="list">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>somalia, magadisho, Inside The yaqshid</p>
+                    
+                </div>
+                <div class="list">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Business Hours: From 10:00 To 18:00</p>
+                    
+                </div>
+                <div class="list">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>
+                        +20123456789
+                        +20198765432
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="img">
+                <img src="img/gallery-01.png" alt="">
+                <img src="img/gallery-02.png" alt="">
+                <img src="img/gallery-01.png" alt="">
+                <img src="img/gallery-04.png" alt="">
+                <img src="img/gallery-06.png" alt="">
+            </div>
+        </div>
+        <h2>made by <span>phanich</span></h2>
+    </footer>
+    <!-- End Footer -->
+
 
 
     <!-- JS File -->
